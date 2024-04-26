@@ -6,7 +6,7 @@ import homeImage from "../assets/hero.png";
 export default function Hero() {
   return (
     <Section id="hero">
-      <div className="backgraund">
+      <div className="background">
         <img src={homeImage} alt="" />
       </div>
       <div className="content">
@@ -81,7 +81,7 @@ const Section = styled.section`
     }
     .search{
       display:flex;
-     
+      justify-content: center;
       background-color:#ffffffce;
       padding:0.5rem;
       border-radius:0.5rem;
@@ -114,7 +114,19 @@ const Section = styled.section`
         }
       }
       button{
-        
+        padding:1rem;
+        cursor:pointer;
+        border-radius:0.3rem;
+        border:none;
+        color:white;
+        background-color:#4361ee;
+        font-size:1.1rem;
+        text-transform:uppercase;
+        transition:0.3s ease-in-out;
+        &:hover{
+          background-color:#023e8a;
+        }
+
       }
     }
 
