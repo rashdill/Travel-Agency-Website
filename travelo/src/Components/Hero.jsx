@@ -49,7 +49,7 @@ const Section = styled.section`
   .background{
     img{
       width:100%;
-      filter:brightness(60%);
+      filter:brightness(40%);
     }
   }
   .content{
@@ -65,7 +65,57 @@ const Section = styled.section`
     align-items:center;
     gap:1rem;
     .title{
-      
+      color:black;
+      h1{
+        font-size:3rem;
+        letter-spacing:0.2rem;
+
+      }
+      p{
+        color:grey;
+        margin-top:0.5rem;
+        font-size:1.2rem;
+
+      }
+
+    }
+    .search{
+      display:flex;
+     
+      background-color:#ffffffce;
+      padding:0.5rem;
+      border-radius:0.5rem;
+      .container{
+        display:flex;
+        align-items:center;
+        justify-content;center;
+        flex-direction:column;
+        padding:0 1.5rem;
+        label{
+          font-size:1.1rem;
+          color:#03045e;
+        }
+        input{
+          background-color:transparent;
+          border:none;
+          text-align:center;
+          color:black;
+          &[type=""date"]{
+            padding-left:3rem;
+
+          }
+          &::placeholder{
+            color:black;
+          }
+          &:focus{
+            outline:none;
+
+          }
+        }
+      }
+      button{
+        
+      }
     }
 
   }
