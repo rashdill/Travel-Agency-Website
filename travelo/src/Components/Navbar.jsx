@@ -18,7 +18,7 @@ export default function Navbar() {
             <li><a href='#home'>Home</a></li>
             <li><a href='#services'>Services</a></li>
             <li><a href='#recommendation'>Recommendation</a></li>
-            <li><a href='#tsetimonials'>Testimonials</a></li>
+            <li><a href='#tesetimonials'>Testimonials</a></li>
         </ul>
         <button>Connect</button>
       </Nav>
@@ -26,5 +26,5 @@ export default function Navbar() {
 
   )
 }
-const Nav = Styled.nav;
+const Nav = styled.nav``;
 
