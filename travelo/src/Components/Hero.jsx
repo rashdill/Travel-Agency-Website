@@ -41,4 +41,18 @@ export default function Hero() {
     </Section>
   )
 }
+const Section = styled.section`
+  position:relative;
+  margin-top:2rem;
+  width:100%;
+  height:100%;
+  .background{
+    img{
+      width:100%;
+      filter:brightness(60%);
+    }
+  }
+  
+  
 
+`;
