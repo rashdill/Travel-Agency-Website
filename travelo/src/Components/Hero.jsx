@@ -52,7 +52,22 @@ const Section = styled.section`
       filter:brightness(60%);
     }
   }
-  
-  
+  .content{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    z-index:3;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    .title{
+      
+    }
+
+  }
 
 `;
