@@ -88,7 +88,7 @@ const Section = styled.section`
       .container{
         display:flex;
         align-items:center;
-        justify-content;center;
+        justify-content:center;
         flex-direction:column;
         padding:0 1.5rem;
         label{
@@ -100,7 +100,7 @@ const Section = styled.section`
           border:none;
           text-align:center;
           color:black;
-          &[type=""date"]{
+          &[type="date"]{
             padding-left:3rem;
 
           }
