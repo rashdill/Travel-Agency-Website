@@ -17,8 +17,8 @@ export default function Navbar() {
         <ul>
             <li><a href='#home'>Home</a></li>
             <li><a href='#services'>Services</a></li>
-            <li><a href='#recommendation'>Recommendation</a></li>
-            <li><a href='#tesetimonials'>Testimonials</a></li>
+            <li><a href='#recommend'>Recommendation</a></li>
+            <li><a href='#testimonials'>Testimonials</a></li>
         </ul>
         <button>Connect</button>
       </Nav>
