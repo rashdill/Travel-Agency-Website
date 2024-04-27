@@ -12,10 +12,8 @@ export default function Hero() {
       <div className="content">
         <div className="title">
           <h1>Travel To Explore</h1>
-          <p>Pack Up + Go is a travel agency that specializes in surprise vacations. Travelers fill out a 
-            survey about their travel preferences, budget etc. The travel agent will then plan every aspect of the 
-            trip accordingly. This type of vacation is perfect for those who love to travel and be spontaneous, but don’t like creative travel planning. 
-            It’s also a great way to explore new places without any preconceived notions or expectations
+          <p>Travelo is a travel agency that specializes in surprise vacations. Travelers fill out a 
+            survey about their travel preferences, budget etc.
             </p>
         </div>
         <div className="search">
@@ -65,14 +63,14 @@ const Section = styled.section`
     align-items:center;
     gap:1rem;
     .title{
-      color:black;
+      color:white;
       h1{
         font-size:3rem;
         letter-spacing:0.2rem;
 
       }
       p{
-        color:grey;
+        color:white;
         margin-top:0.5rem;
         font-size:1.2rem;
 
@@ -130,6 +128,44 @@ const Section = styled.section`
       }
     }
 
+  }
+  @media Screen and (min-width: 280px) and (max-width: 1080px){
+    height:25rem;
+    .background{
+      img{
+        height:100%;
+
+      }
+    }
+    .content{
+      .title{
+        h1{
+          font-size:1rem;
+
+        }
+        p{
+          font-size:0.8rem;
+          padding:1vm;
+
+        }
+      }
+      .search{
+        flex-direction:column;
+        padding:0.8rem;
+        gap:0.8rem;
+        .container{
+          padding:0 0.8rem;
+          input[type="date"]{
+            padding-left:1rem;
+
+          }
+        }
+        button{
+          padding:1rem;
+          font-size:1rem;
+        }
+      }
+    }
   }
 
 `;
