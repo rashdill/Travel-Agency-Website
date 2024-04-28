@@ -29,6 +29,14 @@ export default function Navbar() {
         </ul>
         <button>Connect</button>
       </Nav>
+      <ResponsiveNav state={navbarState}>
+      <ul>
+            <li><a href='#hero'onClick={()=> setNavbarState(false)}>Home</a></li>
+            <li><a href='#services'onClick={()=> setNavbarState(false)}>Services</a></li>
+            <li><a href='#recommend'onClick={()=> setNavbarState(false)}>Recommendation</a></li>
+            <li><a href='#testimonials'onClick={()=> setNavbarState(false)}>Testimonials</a></li>
+        </ul>
+      </ResponsiveNav>
     </>
 
   )
@@ -109,4 +117,40 @@ const Nav = styled.nav`
     
   }
 `;
+const ResponsiveNav= styled.div`
+ display:flex;
+ position:absolute;
+ z-index:5;
+ background-color:white;
+ width:100%;
+ height:30vh;
+ align-items:center;
+ transition:0.3s ease-in-out;
+ top: ${({ state }) => (state ? "50px" : "-400px")};
+
+
+ ul{
+  list-style-type: none;
+  width:100%;
+  li{
+    width:100%;
+    margin:1rem;
+    margin-left:2rem;
+    a{
+      text-decoration:none;
+      color:#004776;
+      font-size:1.2rem;
+      transition:0.1s ease-in-out;
+      &:hover{
+        color:#023e8a;
+      }
+    }
+    &:first-of-type{
+      color:#023e8a;
+      font-weight:900;
+    }
+  }
+ }
+`;
+
 
