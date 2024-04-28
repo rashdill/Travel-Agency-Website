@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import homeImage from "../assets/hero.png";
+import homeImage from "../assets/hero2.png";
 export default function Hero() {
   return (
     <Section id="hero">
@@ -11,9 +11,9 @@ export default function Hero() {
         <div className="title">
           <h1>TRAVEL TO EXPLORE</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            natus, enim ipsam magnam odit deserunt itaque? Minima earum velit
-            tenetur!
+          Travelo is a travel agency that specializes in surprise vacations. 
+          Travelers fill out a survey about their travel preferences, budget etc. 
+          
           </p>
         </div>
         <div className="search">

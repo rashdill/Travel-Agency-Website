@@ -151,6 +151,7 @@ const Section = styled.section`
       }
       img {
         width: 100%;
+        border-radius:1rem;
       }
       .info {
         display: flex;
@@ -193,4 +194,5 @@ const Section = styled.section`
       padding: 0;
     }
   }
+  
 `;
